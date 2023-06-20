@@ -7,7 +7,7 @@ This table will be used to store the names of all the individuals of the college
 mentors
 The mentor_id, will refer to the `id` on the `individual` table. Individuals with mentor_id
 null are mentors.
-college_individual
+college_individual 
 `
 id name email mentor_id
 1 Mayank Pathak mayank@gmail.com null
