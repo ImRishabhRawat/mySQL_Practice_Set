@@ -18,7 +18,7 @@ id first_name last_name email date_of_birth
 `
 seller
 `
-id name gender
+[label](practice_set1.md)id name gender
 1 Pooja Pathak female
 2 Chandan Chaudhary male
 3 Saloni Saini female

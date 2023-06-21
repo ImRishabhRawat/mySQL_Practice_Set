@@ -41,7 +41,6 @@ INSERT INTO `Shop`.`sales` (`id`, `customer_id`, `seller_id`, `date`, `amount`) 
 
 
 
-Select customer.last_name,customer.first_name from customer;
 
 SELECT
 	customer.last_name,
@@ -51,3 +50,15 @@ SELECT
 FROM ((sales
 		INNER JOIN customer ON sales.customer_id = customer.id)
 	INNER JOIN seller ON sales.seller_id = seller.id);
+
+
+SELECT
+	customer.last_name,
+	customer.first_name,
+	seller. `name` AS Seller_Name,
+	sales.amount
+FROM ((sales
+		INNER JOIN customer ON sales.customer_id = customer.id)
+	INNER JOIN seller ON sales.seller_id = seller.id)
+ORDER BY
+	customer.first_name ASC
